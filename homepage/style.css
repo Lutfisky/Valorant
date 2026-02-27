@@ -149,35 +149,37 @@ nav a:hover {
     font-size: 14px;
 }
 
+
+/* about sektion */
 .about {
     background-color: #111827;
     background-image: url('images/about/clove.png');
-    background-size: cover;          /* Bild füllt den Bereich */
-    background-position: center top; /* Figur in der Mitte oben */
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
     color: #ffffff;
-    padding: 140px 160px 200px 160px; /* mehr Platz links/rechts/unten */
+    padding: 140px 160px 200px 160px;
     min-height: 980px;
     text-align: center;
 }
 
-/* Texte links und rechts neben der Person */
+/* rechts, links */
 .about-row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 80px;                       /* mehr Abstand zur Mitte */
+    gap: 80px;
     margin-bottom: 120px;
 }
 
 .about-text {
-    width: 32%;                      /* etwas breiter als vorher */
+    width: 32%;
     font-size: 16px;
     line-height: 1.6;
     text-align: left;
 }
 
-/* unterer Text + Button */
+/* unterer Text */
 .about-bottom-text {
     max-width: 900px;
     margin: 0 auto 30px auto;
@@ -185,6 +187,7 @@ nav a:hover {
     line-height: 1.6;
 }
 
+/* play button */
 .about-button {
     display: inline-block;
     margin-top: 10px;
