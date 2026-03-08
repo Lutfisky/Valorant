@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
 /* General */
 @font-face {
     font-family: 'Valorant';
@@ -11,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Oswald', Arial, sans-serif;
     background-color: #111;
     color: white;
 }
@@ -113,6 +115,7 @@ nav a:hover {
 .news {
     background-color: #ffffff;
     color: #000000;
+    font-family: 'Oswald', Arial, sans-serif;
     padding: 60px 120px 80px 120px;
 }
 
@@ -168,13 +171,14 @@ nav a:hover {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 80px;
+    gap: 160px;
+    margin-top: 400px;
     margin-bottom: 120px;
 }
 
 .about-text {
     width: 32%;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     text-align: left;
 }
@@ -183,12 +187,202 @@ nav a:hover {
 .about-bottom-text {
     max-width: 900px;
     margin: 0 auto 30px auto;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
 /* play button */
 .about-button {
     display: inline-block;
+    margin-top: 10px;
+}
+
+/* agents sektion */
+.agents {
+    background-color: #101823;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.agents-left {
+    flex: 0 0 60%;
+}
+
+.agent-img {
+    width: 100%;
+    height: auto;
+}
+
+.agents-right {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+}
+
+.agents-right h2 {
+    font-size: 80px;
+    color: #ff4655;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+    font-family: 'Valorant', Arial, sans-serif;
+}
+
+.agents-right p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #b3b3b3;
+}
+
+.agents-button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 14px 32px;
+}
+
+/* maps-sektion */
+.maps {
+    position: relative;
+    background-color: #1a1a1a;
+    padding: 100px 120px 120px 120px;
+    min-height: 700px;
+}
+
+.maps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("images/maps/maps.png");
+    background-size: cover;
+    background-position: center right;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.maps-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.maps h2 {
+    color: #ff4655;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    line-height: 0.9;
+    font-family: 'Valorant', Arial, sans-serif;
+    margin: 0;
+    align-self: flex-start;
+}
+
+/* text */
+.maps p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #e5e5e5;
+    max-width: 600px;
+    margin: 0 0 20px 0;
+    text-align: right;    
+    align-self: flex-end; 
+}
+
+.maps-button {
+    align-self: flex-start;
+    font-size: 16px;
+    padding: 14px 32px;
+    background-color: #ff4655;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* ranks section */
+.ranks {
+    background-image: url('images/ranks/ranks.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    padding: 120px 40px;
+    min-height: 700px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ranks-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+    max-width: 1400px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.ranks h2 {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 80px;
+    color: #ff4655;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin: 0;
+    font-family: 'Valorant', Arial, sans-serif;
+    justify-self: start;
+}
+
+.ranks-text-1 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #ffffff;
+    max-width: 400px;
+    text-align: left;
+}
+
+.ranks-text-2 {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #ffffff;
+    max-width: 400px;
+    text-align: right;
+    justify-self: end;
+}
+
+.ranks-button {
+    grid-column: 3;
+    grid-row: 3;
+    display: inline-block;
+    font-size: 16px;
+    padding: 14px 32px;
+    background-color: #ff4655;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    justify-self: end;
     margin-top: 10px;
 }
